@@ -57,7 +57,6 @@ O projeto usa `morgan` para gerar logs de requisição no console.
 
 - `index.js` - ponto de entrada do servidor
 - `package.json` - dependências e scripts do projeto
-- `requests.http` - exemplo de requisição HTTP para teste local
 
 ## Observação
 
