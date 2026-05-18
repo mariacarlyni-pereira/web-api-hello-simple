@@ -1,10 +1,15 @@
-# Express.js Example
+## Web API de Hello World
 
 Um projeto simples em Node.js usando Express e Morgan.
 
 ## Visão geral
 
 Este projeto cria um servidor HTTP básico que responde a requisições `GET /` com a mensagem `Hello, World!`.
+
+
+<img width="1913" height="1027" alt="image" src="https://github.com/user-attachments/assets/32c7d477-8b3e-49a2-b8f4-5a08a5be25dd" />
+
+
 
 ## Tecnologias
 
