@@ -1,41 +1,59 @@
-# Web API - Hello World
+# Express.js Example
 
-Este repositório contém a solução para o desafio de criar uma Web API simples que exibe uma saudação por meio de uma resposta HTTP. Quando um cliente faz uma requisição para a rota raiz (`/`), a API responde com a mensagem `"Hello World"`.
+Um projeto simples em Node.js usando Express e Morgan.
 
-## 📝 Descrição da Atividade
+## Visão geral
 
-O objetivo principal desta atividade é compreender o funcionamento básico do protocolo HTTP e o fluxo de comunicação Cliente-Servidor.
+Este projeto cria um servidor HTTP básico que responde a requisições `GET /` com a mensagem `Hello, World!`.
 
-### Fluxo de Funcionamento
+## Tecnologias
 
-1. **Requisição (Request):** O cliente envia uma requisição HTTP do tipo `GET` para a rota raiz `/` do servidor.
-2. **Processamento:** O servidor recebe a requisição, identifica a rota correspondente e processa a lógica (gerar a string de saudação).
-3. **Resposta (Response):** O servidor envia uma resposta HTTP de volta para o cliente com o status `200 OK` e o corpo contendo o texto `"Hello World"`.
+- Node.js
+- Express
+- Morgan
 
----
+## Pré-requisitos
 
-## 🚀 Tecnologias Sugeridas / Utilizadas
+- Node.js 18+ instalado
+- npm instalado
 
-Este projeto pode ser implementado em diversas linguagens. Abaixo estão exemplos de implementação utilizando **Node.js (Express)** e **Python (Flask)**.
+## Instalação
 
-### Opção 1: Node.js + Express
-* **Linguagem:** JavaScript / TypeScript
-* **Framework:** Express
+1. Abra um terminal na pasta do projeto.
+2. Execute:
 
-### Opção 2: Python + Flask
-* **Linguagem:** Python
-* **Framework:** Flask
-
----
-
-## 🛠️ Como Executar o Projeto
-
-Escolha uma das implementações abaixo para rodar em sua máquina local:
-
-### 📦 Clonando o Repositório
 ```bash
-git clone [https://github.com/seu-usuario/nome-do-repositorio.git](https://github.com/seu-usuario/nome-do-repositorio.git)
-cd nome-do-repositorio
+npm install
+```
 
+## Uso
 
-<img width="1913" height="1027" alt="image" src="https://github.com/user-attachments/assets/9dc449bd-e5ed-4075-95bb-89521bf45178" />
+Inicie o servidor com:
+
+```bash
+node index.js
+```
+
+Em seguida, abra no navegador ou use uma ferramenta como `curl`:
+
+```bash
+http://localhost:3000/
+```
+
+## Endpoint
+
+- `GET /` - Retorna `Hello, World!`
+
+## Logs
+
+O projeto usa `morgan` para gerar logs de requisição no console.
+
+## Arquivos principais
+
+- `index.js` - ponto de entrada do servidor
+- `package.json` - dependências e scripts do projeto
+- `requests.http` - exemplo de requisição HTTP para teste local
+
+## Observação
+
+O servidor escuta na porta `3000` e exibe uma mensagem no console quando iniciado.
